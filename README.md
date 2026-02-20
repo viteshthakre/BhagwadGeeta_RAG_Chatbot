@@ -48,28 +48,56 @@ User Query → FAISS Vector Search → Relevant Verse Retrieval → Groq LLM (Co
 ---
 
 ## 📁 Project Structure
-
+```
 BHAGAVAD_GEETA_RAG/
+    ├── backend/ 
+    │     ├── data_processing/
+    │          └── excel_to_json.py
+    │     ├── app.py
+    │     ├── create_vectorDB.py
+    ├── frontend/
+    │   ├── static/
+    │      ├── Bhagwad_Geeta_BG.jpeg
+    │      └── style.css
+    │   ├── templates/
+    │      └── chat.html
+    │   └── app.py
+    ├── raw_data/
+    │   ├── Bhagavad_Geeta.xlsx
+    │   └── Bhagvad_gita_rag.json
+    ├── vectorstore/
+    ├── venv/
+    ├── .gitignore
+    └── requirments.txt
+```
 
-├── backend/
+## 🚀 Getting Started
 
-│   ├── data_processing/
+### 1️⃣ Clone Repository
+```
+git clone <https://github.com/viteshthakre/BhagwadGeeta_RAG_Chatbot>
+cd Bhagavad_Geeta_RAG_chatbot
+```
 
-│   │   └── excel_to_json.py
+### 2️⃣ Install Dependencies
+```
+pip install -r requirments.txt
+```
 
-│   ├── app.py
-│   └── create_vectorDB.py
-├── frontend/
-│   ├── static/
-│   │   ├── Bhagwad_Geeta_BG.jpeg
-│   │   └── style.css
-│   ├── templates/
-│   │   └── chat.html
-│   └── app.py
-├── raw_data/
-│   ├── Bhagavad_Geeta.xlsx
-│   └── Bhagvad_gita_rag.json
-├── vectorstore/
-├── venv/
-├── .gitignore
-└── requirments.txt
+### 3️⃣ Add API Key
+```
+Create a .env file in the backend directory:
+
+GROQ_API_KEY=your_api_key_here
+```
+
+### 4️⃣ Run Backend
+```
+python -m uvicorn app:app --reload
+```
+
+### 5️⃣ Run Frontend
+```
+cd frontend
+python app.py
+```
