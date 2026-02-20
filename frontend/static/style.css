@@ -1,0 +1,63 @@
+body{
+    background:url('/static/Bhagwad_Geeta_BG.jpeg');
+    background-size:cover;
+    font-family:Arial;
+}
+
+.chat-container{
+    width:40%;
+    margin:auto;
+    margin-top:100px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+    color:white;
+}
+
+#chat-box{
+    height:400px;
+    overflow:auto;
+}
+
+.user{
+    text-align:right;
+    margin:10px;
+    color:yellow;
+}
+
+.bot{
+    text-align:left;
+    margin:10px;
+    color:white;
+}
+
+.verse{
+    line-height: 1.4;
+}
+
+.verse p{
+    margin: 4px 0;
+}
+
+.input-area{
+    display:flex;
+    margin-top:10px;
+}
+
+input{
+    flex:1;
+    padding:10px;
+}
+
+button{
+    padding:10px;
+}
+
+input{
+    width:80%;
+    padding:10px;
+}
+
+button{
+    padding:10px;
+}
