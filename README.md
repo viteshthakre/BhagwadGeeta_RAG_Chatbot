@@ -50,9 +50,13 @@ User Query → FAISS Vector Search → Relevant Verse Retrieval → Groq LLM (Co
 ## 📁 Project Structure
 
 BHAGAVAD_GEETA_RAG/
+
 ├── backend/
+
 │   ├── data_processing/
+
 │   │   └── excel_to_json.py
+
 │   ├── app.py
 │   └── create_vectorDB.py
 ├── frontend/
